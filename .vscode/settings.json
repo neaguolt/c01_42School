@@ -1,0 +1,10 @@
+{
+	"editor.fontSize": 18,
+    "editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.renderWhitespace": "all",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+
+	"42header.email": "neaguolt@gmail.com"
+}
