@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deb <neaguolt@gmail.com>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/28 16:23:29 by deb               #+#    #+#             */
-/*   Updated: 2024/07/28 17:29:56 by deb              ###   ########.fr       */
+/*   Created: 2024/07/28 20:58:21 by deb               #+#    #+#             */
+/*   Updated: 2024/07/28 21:06:41 by deb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prototype
-void	ft_ft(int *nbr);
+#include <stdio.h>
 
-//function declaration
-void	ft_ft(int	*nbr)
+void	ft_swap(int *a, int *b);
+
+void	ft_swap(int *a, int *b)
 {
-	*nbr = 42;
+	int	temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 /*
 int	main(void)
 {
-	int	numar;
+	int	s_a;
+	int	s_b;
 
-	numar = 34;
-	ft_ft(&numar);
-	printf("The value is: %d\n", numar);
+	s_a = 5;
+	s_b = 6;
+	ft_swap(&s_a, &s_b);
+	printf("a = %d; b = %d\n", s_a, s_b);
 }*/

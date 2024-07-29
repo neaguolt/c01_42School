@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deb <neaguolt@gmail.com>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/28 16:23:29 by deb               #+#    #+#             */
-/*   Updated: 2024/07/28 17:29:56 by deb              ###   ########.fr       */
+/*   Created: 2024/07/28 20:41:42 by deb               #+#    #+#             */
+/*   Updated: 2024/07/28 20:53:46 by deb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prototype
-void	ft_ft(int *nbr);
+#include <stdio.h>
 
-//function declaration
-void	ft_ft(int	*nbr)
+void	ft_div_mod(int a, int b, int *div, int *mod);
+
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*nbr = 42;
+	*div = a / b;
+	*mod = a % b;
 }
 /*
 int	main(void)
 {
-	int	numar;
+	int	n_div;
+	int	n_mod;
 
-	numar = 34;
-	ft_ft(&numar);
-	printf("The value is: %d\n", numar);
+	ft_div_mod(8, 3, &n_div, &n_mod);
+	printf("The of div is: %d\nThe of mod is: %d", n_div, n_mod);
 }*/

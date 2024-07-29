@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deb <neaguolt@gmail.com>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 17:23:25 by deb               #+#    #+#             */
-/*   Updated: 2024/07/28 16:33:38 by deb              ###   ########.fr       */
+/*   Created: 2024/07/29 10:40:28 by deb               #+#    #+#             */
+/*   Updated: 2024/07/29 10:45:37 by deb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-// Function prototype
-void	ft_ft(int	*nbr);
+int	ft_strlen(char *str);
 
-// Check if the number of arguments is correct
-// Get the first character of the second argument
-	// if (argc != 2)
-	// {
-	// 	fprintf(stderr, "Usage: %s <character>\n", argv[0]);
-	// 	return (1);
-	// }
-// Call the ft_putchar function
-int	main(int argc, char *argv[])
+int	ft_strlen(char *str)
 {
-	int	numar;
+	int	count;
 
-	numar = 34;
-	ft_ft(&numar);
-	printf("The value is: %d\n", numar);
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
 }
+/*
+int	main(void)
+{
+	printf("The length is : %d", ft_strlen("Hello!"));
+	return (0);
+}*/

@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deb <neaguolt@gmail.com>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/28 16:23:29 by deb               #+#    #+#             */
-/*   Updated: 2024/07/28 17:29:56 by deb              ###   ########.fr       */
+/*   Created: 2024/07/29 07:31:07 by deb               #+#    #+#             */
+/*   Updated: 2024/07/29 07:45:08 by deb              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//function prototype
-void	ft_ft(int *nbr);
+#include <stdio.h>
 
-//function declaration
-void	ft_ft(int	*nbr)
+void	ft_ultimate_div_mod(int *a, int *b);
+
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	*nbr = 42;
+	int	temp;
+
+	temp = *a;
+	*a = *a / *b;
+	*b = temp % *b;
 }
 /*
 int	main(void)
 {
-	int	numar;
+	int	p_div;
+	int	p_mod;
 
-	numar = 34;
-	ft_ft(&numar);
-	printf("The value is: %d\n", numar);
+	p_div = 9;
+	p_mod = 4;
+	ft_ultimate_div_mod(&p_div, &p_mod);
+	printf("Result division: %d\nResult reminder: %d\n", p_div, p_mod);
+	return (0);
 }*/
